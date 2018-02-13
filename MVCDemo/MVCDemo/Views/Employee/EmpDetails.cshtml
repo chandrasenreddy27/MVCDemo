@@ -1,0 +1,35 @@
+﻿@model MVCDemo.Models.EmployeeVM
+
+@{
+    ViewBag.Title = "EmpDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>EmpDetails</h2>
+
+<div>
+    <h4>EmployeeVM</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Department)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Department)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
