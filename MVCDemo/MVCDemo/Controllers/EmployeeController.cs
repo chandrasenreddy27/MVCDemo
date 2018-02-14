@@ -19,7 +19,7 @@ namespace MVCDemo.Controllers
         public ActionResult Details(int id)
         {
             EmployeeListVM empList = new EmployeeListVM();
-            var model = empList.EmployeeList.Where(item => item.Id == id).FirstOrDefault();
+            var model = empList.EmployeeList.FirstOrDefault(item => item.Id == id);
             return View(model);
         }
     }

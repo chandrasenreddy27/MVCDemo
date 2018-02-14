@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>All Employees</h2>
 
 <table class="table">
     <tr>
@@ -29,6 +29,7 @@
             </td>
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Click Here for Details", "Details", "Employee", new { id = item.Id }, new { @class="hyperLink" }) |
                 @Html.ActionLink("Details", "Details", new { id = item.Id }) |
                 @Html.ActionLink("Delete", "Delete", new { id = item.Id })
             </td>
