@@ -17,7 +17,7 @@ namespace MVCDemo
                 name: "Default",
                 url: "akash/{controller}/{action}/{id}",
                 defaults: new { controller = "Employee", action = "Index", id = UrlParameter.Optional }
-                , constraints: new { id = @"\d+" } //Restriction for id
+                //, constraints: new { id = @"\d+" } //Restriction for id
                 //,constraints: new { controller = "^E.*", action = "^Index$|^Details" } //Restriction for controller and action
             );
         }

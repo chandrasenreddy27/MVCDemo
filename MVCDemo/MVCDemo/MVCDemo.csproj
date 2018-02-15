@@ -272,6 +272,7 @@
     <Content Include="Views\Employee\AllEmp.cshtml" />
     <Content Include="Views\Employee\Details.cshtml" />
     <Content Include="Views\Employee\EmpDetails.cshtml" />
+    <Content Include="Views\Employee\About.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
