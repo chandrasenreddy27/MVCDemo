@@ -50,7 +50,7 @@ namespace MVCDemo.Controllers
 
         public ActionResult About()
         {
-            ViewData["DateTime"] = ((DateTime)TempData["TestTemp"]);
+            ViewData["DateTime"] = DateTime.Now;// ((DateTime)TempData["TestTemp"]);
             ViewBag.Date = DateTime.Now.DayOfWeek;
             var test = ViewBag.TempDate;
             

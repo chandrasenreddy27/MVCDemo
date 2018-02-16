@@ -7,4 +7,62 @@
 <h2>About</h2>
 
 <h3> @(((DateTime)ViewData["DateTime"])) </h3>
-<h3>@ViewBag.Date</h3>
+<h3>Date: @ViewBag.Date</h3>
+
+@{int a = 5;}
+
+<p>@a</p>
+
+@if (true)
+{
+    <p>From if loop</p>
+}
+
+    @*@for (int i = 0; i < a; i++)
+    {
+        <p>@i</p>
+    }*@
+
+@{ 
+
+    var message = "Welcome to MVC Demo";
+    var date = DateTime.Now;
+    var displayMsz = message + " Date " + date;
+}
+<p>@displayMsz</p>
+
+@if (true)
+{
+    @: The time is: <br /> @DateTime.Now <br />
+    @DateTime.Now @:is the <em>current</em> time.
+ }
+
+
+@{
+    
+}
+
+<text>This is a test message  </text>
+<br />
+
+<br />
+
+@Html.TextBox("txtHelper", "hello mvc helper textbox")
+<br /><br />
+<div>
+    <input type="text" id="txtBox" value="hello" />
+    <br />
+
+
+    <input type="button" id="btnSubmit" value="submit" onclick="DisplayValues()" />
+    <br />
+    <label id="lblDisplay"></label>
+</div>
+
+
+<script type="text/javascript">
+    function DisplayValues() {
+        var displayMsg = 'Name: ' + $('#txtBox').val() + ' ' ;
+        $('#lblDisplay').text(displayMsg);
+    }
+</script>
